@@ -1,0 +1,31 @@
+CRITICAL - 2024-03-12 18:28:10 --> ParseError: syntax error, unexpected token "<"
+in APPPATH/Views/outra_view.php on line 17.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(31): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-12 19:31:39 --> TypeError: App\Controllers\Home::deletarItem(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH/Controllers/Home.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->deletarItem()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-12 20:11:51 --> ArgumentCountError: Too few arguments to function App\Controllers\Home::deletarItemPorURL(), 0 passed in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 60.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->deletarItemPorURL()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-12 20:12:34 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::getParam()
+in APPPATH/Controllers/Home.php on line 61.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->deletarItemPorURL()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')

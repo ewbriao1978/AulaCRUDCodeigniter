@@ -1,0 +1,396 @@
+ERROR - 2024-03-05 19:55:43 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-05 19:55:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+ERROR - 2024-03-05 19:56:08 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-05 19:56:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+ERROR - 2024-03-05 19:57:33 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-05 19:57:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+ERROR - 2024-03-05 19:57:44 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-05 19:57:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+ERROR - 2024-03-05 19:57:59 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-05 19:57:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+ERROR - 2024-03-05 19:59:07 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-05 19:59:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+ERROR - 2024-03-05 19:59:07 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-05 19:59:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-05 19:59:24 --> Error: Class "CodeIgniter\Database\MySQL\Connection" not found
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(153): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(24): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-05 19:59:38 --> Error: Class "CodeIgniter\Database\MariaBD\Connection" not found
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(153): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(24): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-05 19:59:40 --> Error: Class "CodeIgniter\Database\MariaBD\Connection" not found
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(153): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(24): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+ERROR - 2024-03-05 20:04:47 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-03-05 20:04:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-05 20:06:37 --> TypeError: App\Controllers\Home::telinha(): Return value must be of type string, none returned
+in APPPATH/Controllers/Home.php on line 30.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-05 20:22:04 --> ErrorException: Undefined variable $result
+in APPPATH/Views/outra_view.php on line 13.
+ 1 APPPATH/Views/outra_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Views/outra_view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(29): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
