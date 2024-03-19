@@ -62,6 +62,34 @@ class Home extends BaseController
         $my_model->delete($num);
         return redirect()->to('tela'); 
 
+    }
+
+    public function editarItem(){
+
+        $my_model = new AutomoveisModel();
+        $id_var = $this->request->getVar('id');
+        $result = $my_model->find($id_var);
+
+        //print_r($result);
+        $data['result'] = $result;
+        return view('formularioEdicao',$data);
+    }
+
+    public function updateData(){
+
+        $id_var = $this->request->getVar('id_for_updating');
+        $data = array(
+            'marca' => $this->request->getVar('marca_edit'),
+            'modelo' => $this->request->getVar('modelo_edit'),
+            'km'=> $this->request->getVar('km_edit'),
+            'ano'=> $this->request->getVar('ano_edit'),
+            'preco' => $this->request->getVar('preco_edit')
+        );
+
+        $my_model = new AutomoveisModel();
+        
+        $result = $my_model->update($id_var,$data);
+        return redirect()->to('tela'); 
 
     }
 

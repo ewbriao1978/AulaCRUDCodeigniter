@@ -17,8 +17,13 @@
         
         ?>
         <form action="delete" method="POST">
-        <input type="hidden" name="id" value="<?php echo $row['id'] ?>">
+        <input type="hidden" name="id" value="<?=$row['id'] ?>">
         <button type="submit" name="submit">Remove via POST</button>
+        </form>
+
+        <form action="editform" method="POST">
+        <input type="hidden" name="id" value="<?=$row['id'] ?>">
+        <button type="submit" name="submit">Edit via POST</button>
         </form>
 
         <br>
