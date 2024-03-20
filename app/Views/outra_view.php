@@ -7,13 +7,22 @@
 </head>
 <h1> OUTRA VIEW </h1>
 
+<form action="/pesquisar" method="post">
+    <label for="mylabel">Pesquisa: </label>
+    <input type="text" name="pesquisa">
+    <button type="submit"  name="submit">Pequisar</button>
+</form>
+<br>
+
 <h2> Dados </h2>
 
 <?php
     foreach ($result as $row){
         echo "id:".$row['id']. "<br>";
         echo "modelo:".$row['modelo']."<br>";
-        echo "marca:".$row['marca'];
+        echo "marca:".$row['marca']."<br>";
+        echo "Km:".$row['km']."<br>";
+        echo "preco".$row['preco']."<br>";
         
         ?>
         <form action="delete" method="POST">
@@ -39,4 +48,5 @@
 
 <p>  Como acessar essa view?   </p>
 <a href="http://localhost:8080" > volta </a>
+<a href="/formulario" > Inserir dados </a>
 </html>

@@ -93,6 +93,21 @@ class Home extends BaseController
 
     }
 
+    public function pesquisar(){
+        $mysearch = $this->request->getVar("pesquisa");
+
+
+        $db      = \Config\Database::connect();
+        $builder = $db->table('automoveis');
+
+
+        $result = $builder->like('modelo', $mysearch)->get()->getResult('array');
+
+    
+       $data['result'] = $result;
+       return view('outra_view',$data);
+    }
+
 
 
 }

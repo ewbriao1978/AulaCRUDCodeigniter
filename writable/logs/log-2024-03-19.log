@@ -1,0 +1,122 @@
+CRITICAL - 2024-03-19 19:10:48 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php on line 103
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Controllers/Home.php(103): CodeIgniter\Database\BaseBuilder->like()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:11:49 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php on line 104
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Controllers/Home.php(104): CodeIgniter\Database\BaseBuilder->like()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:12:46 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH/Controllers/Home.php on line 105.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:12:49 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH/Controllers/Home.php on line 105.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:17:06 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH/Controllers/Home.php on line 105.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:40:31 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Builder::$result
+in APPPATH/Controllers/Home.php on line 106.
+ 1 APPPATH/Controllers/Home.php(106): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:40:53 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::result()
+in APPPATH/Controllers/Home.php on line 106.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:45:40 --> ErrorException: Attempt to read property "marca" on array
+in APPPATH/Controllers/Home.php on line 107.
+ 1 APPPATH/Controllers/Home.php(107): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:46:18 --> ErrorException: Undefined array key "marca"
+in APPPATH/Controllers/Home.php on line 107.
+ 1 APPPATH/Controllers/Home.php(107): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:46:40 --> ErrorException: Array to string conversion
+in APPPATH/Controllers/Home.php on line 105.
+ 1 APPPATH/Controllers/Home.php(105): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:46:43 --> ErrorException: Array to string conversion
+in APPPATH/Controllers/Home.php on line 105.
+ 1 APPPATH/Controllers/Home.php(105): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:46:57 --> Error: Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH/Controllers/Home.php on line 105.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:47:56 --> Error: Call to a member function asArray() on array
+in APPPATH/Controllers/Home.php on line 104.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:48:03 --> ErrorException: Attempt to read property "asArray" on array
+in APPPATH/Controllers/Home.php on line 104.
+ 1 APPPATH/Controllers/Home.php(104): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:50:17 --> ErrorException: Undefined variable $query
+in APPPATH/Controllers/Home.php on line 111.
+ 1 APPPATH/Controllers/Home.php(111): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+CRITICAL - 2024-03-19 19:54:56 --> ErrorException: Undefined array key "modelo"
+in APPPATH/Controllers/Home.php on line 108.
+ 1 APPPATH/Controllers/Home.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->pesquisar()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
