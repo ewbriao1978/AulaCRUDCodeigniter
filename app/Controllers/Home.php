@@ -10,6 +10,7 @@ class Home extends BaseController
     {
         $data['variavel'] = "Conteudo do controller";
         $data['nickname'] = "LordWenzel1978";
+        $this->session->set($data);
         return view('my_view',$data);
     }
 
@@ -26,6 +27,8 @@ class Home extends BaseController
 
         //print_r($result);
         $data['result'] = $result;
+        $meuarray = $this->session->get();
+        $data['nickname'] = $meuarray['nickname']; 
 
 
         return view('outra_view',$data);
@@ -46,7 +49,11 @@ class Home extends BaseController
         $my_model = new AutomoveisModel();
         $my_model->insert($data);
 
-        return view('view_formulario',$data);
+        $this->session->setFlashdata('insertSuccess','Dados inseridos com sucesso');
+
+        return redirect()->to('/tela');
+
+        //return view('view_formulario',$data);
     }
 
     public function deletarItem()

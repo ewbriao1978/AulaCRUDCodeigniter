@@ -5,7 +5,14 @@
     <title>Welcome to Briaosoft world!</title>
 
 </head>
-<h1> OUTRA VIEW </h1>
+
+<?php
+if (\Config\Services::session()->get('insertSuccess')){
+    echo "<strong>".\Config\Services::session()->getFlashdata('insertSucess')."</strong>";
+}
+?>
+
+<h1> OUTRA VIEW <?=$nickname?> </h1>
 
 <form action="/pesquisar" method="post">
     <label for="mylabel">Pesquisa: </label>
