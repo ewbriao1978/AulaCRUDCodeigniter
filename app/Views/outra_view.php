@@ -7,8 +7,8 @@
 </head>
 
 <?php
-if (\Config\Services::session()->get('insertSuccess')){
-    echo "<strong>".\Config\Services::session()->getFlashdata('insertSucess')."</strong>";
+if (session()->get('insertSuccess')){
+    echo "<strong>". session()->getFlashdata('insertSuccess') . "</strong>";
 }
 ?>
 
