@@ -10,6 +10,9 @@
 if (session()->get('insertSuccess')){
     echo "<strong>". session()->getFlashdata('insertSuccess') . "</strong>";
 }
+if (session()->get('updateSuccess')){
+    echo "<i>". session()->getFlashdata('updateSuccess') . "</i>";
+}
 ?>
 
 <h1> OUTRA VIEW <?=$nickname?> </h1>

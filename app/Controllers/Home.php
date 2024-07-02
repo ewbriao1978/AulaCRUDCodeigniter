@@ -96,6 +96,9 @@ class Home extends BaseController
         $my_model = new AutomoveisModel();
         
         $result = $my_model->update($id_var,$data);
+        $this->session->setFlashdata('updateSuccess','Dados atualizados com sucesso');
+
+
         return redirect()->to('tela'); 
 
     }
@@ -112,6 +115,8 @@ class Home extends BaseController
 
     
        $data['result'] = $result;
+       $meuarray = $this->session->get();
+       $data['nickname'] = $meuarray['nickname']; 
        return view('outra_view',$data);
     }
 

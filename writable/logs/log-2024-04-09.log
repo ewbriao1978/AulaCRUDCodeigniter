@@ -1,0 +1,78 @@
+INFO - 2024-04-09 19:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-09 19:11:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH/Controllers/BaseController.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+INFO - 2024-04-09 19:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-09 19:12:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH/Controllers/BaseController.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+ERROR - 2024-04-09 19:12:35 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php(184): mysqli->real_connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(26): CodeIgniter\BaseModel->findAll()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#5 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/app/Controllers/Home.php(26): CodeIgniter\BaseModel->findAll()
+#6 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(941): App\Controllers\Home->telinha()
+#7 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2024-04-09 19:12:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(26): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Home->telinha()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+INFO - 2024-04-09 19:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-09 19:12:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH/Controllers/BaseController.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+INFO - 2024-04-09 19:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-09 19:12:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH/Controllers/BaseController.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
+INFO - 2024-04-09 19:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-09 19:12:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH/Controllers/BaseController.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/eduardo/sources/codeigniter/codeigniter4-framework-v4.4.6-0-g7d393f8/codeigniter4-framework-7d393f8/public/index.php')
